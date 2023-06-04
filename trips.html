@@ -1,0 +1,508 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="style_trips.css" type="text/css">
+        <title>Roamer</title>
+        <link rel="icon" href="./asset/logo roamer.svg" type="svg">
+    </head>
+    <body>
+        <!--  Header  -->
+
+        <div class="header_container poppins bold">
+            
+            <div class="header_roamer green bold">
+                roamer
+            </div>
+
+            <div class="header_navbar gray">
+                <ul class="navbar_list">
+                    <a href="index.html">
+                        <lo class="home">Home</lo>
+                    </a>
+                    <a href="trips.html">
+                        <lo class="trips white">Trips</lo>
+                    </a>
+                    <a href="hotel_search.html">
+                        <lo class="hotels gray">Hotels</lo>
+                    </a>
+                    <a href="shareXperience.html">
+                        <lo class="shareX gray">ShareXperience</lo>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="header_signin bold">
+                <div class="center_customer">
+                    <a href="customer_service.html">
+                        <img src="./asset/headphone.svg" alt="customer service">
+                    </a>
+                </div>
+                <div class="sign_in_container" onclick="toLogin()">
+                    <div class="sign_in">
+                        <a href="sign_in.html">
+                            Sign In
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--  enjoy trips  -->
+
+        <div class="enjoy_container inter">
+            <div class="enjoy_left">
+                <div class="enjoy_title bold">
+                    <span class="life_short gray">
+                        Life Is Too Short For A Wide And Beautiful World
+                    </span>
+                    <span class="enjoy_trips white">
+                        Enjoy You Trip With <br>
+                        Heavenly Experience You've <br>
+                        Never Had
+                    </span>
+                </div>
+            </div>
+            <div class="enjoy_right">
+                <img src="./asset/pemandangan pantai gurun.svg" alt="">
+            </div>
+        </div>
+
+         <!--  Input  -->
+
+         <div class="input_container inter">
+            <div class="input_top green">
+                <div class="input_left">
+                    <div class="input_center">
+                        <img src="./asset/location.svg" alt="">
+                        <span class="nusa_tenggara">
+                            Nusa Tenggara Barat
+                        </span>
+                        <img src="./asset/arrow green.svg" alt="">
+                    </div>
+                   
+                </div>
+                <div class="input_mid">
+                    <div class="input_center center_center">
+                        <img src="./asset/date green.svg" alt="">
+                        <span class="nusa_tenggara">
+                            6 Febuari 2022
+                        </span>
+                        <img src="./asset/arrow green.svg" alt="">
+                    </div>
+                    
+                </div>
+                <div class="input_right">
+                    <div class="input_center">
+                        <img src="./asset/people grup.svg" alt="">
+                        <span class="nusa_tenggara">
+                            5 person
+                        </span>
+                        <img src="./asset/arrow green.svg" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="input_bottom">
+                <a href="trips_detail.html">
+                    <button class="search">
+                        <span class="search_text bold">
+                            Search
+                        </span>
+                    </button>
+                </a>    
+                
+            </div>
+         </div>
+
+        <!--  most visited  -->
+
+        <div class="visited_container inter">
+            <div class="visited_title">
+                <span class="bold green">
+                    Most Visited <span class="italic">Places</span> This Month
+                </span>
+            </div>
+            <div class="visited_content inter">
+                <div class="visited_split">
+                    <div class="container_spot">
+                        <div class="spot_img"></div>
+                        <div class="spot_img_info">
+                            <div class="rating">
+                                <div class="beach_tag green">
+                                    <span class="beach">
+                                        Beach
+                                    </span>
+                                </div>
+                                <img src="./asset/Ratings.svg" alt="">
+                            </div>
+                            <div class="img_title white bold">
+                                Labuan Bajo
+                            </div>
+                            <div class="book_now_button">
+                                <div class="button_left">
+                                    <a href="trips_detail.html">
+                                        <button class="book_now green" onclick="showDetail()">
+                                            <span class="book">
+                                                Book Now
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="button_right">
+                                    <button class="view_detail green" onclick="showAbout()">
+                                        <span class="book">
+                                            View Detail
+                                        </span>
+                                       
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_spot">
+                        <div class="raja-ampat"></div>
+                        <div class="spot_img_info">
+                            <div class="rating">
+                                <div class="beach_tag green">
+                                    <span class="beach">
+                                        Island
+                                    </span>
+                                </div>
+                                <img src="./asset/Ratings.svg" alt="">
+                            </div>
+                            <div class="img_title white bold">
+                                Raja Ampat
+                            </div>
+                            <div class="book_now_button">
+                                <div class="button_left">
+                                    <a href="trips_detail.html">
+                                        <button class="book_now green" onclick="showDetail()">
+                                            <span class="book">
+                                                Book Now
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="button_right">
+                                    <button class="view_detail green" onclick="showAbout()">
+                                        <span class="book">
+                                            View Detail
+                                        </span>
+                                       
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_spot">
+                        <div class="bedugul"></div>
+                        <div class="spot_img_info">
+                            <div class="rating">
+                                <div class="beach_tag green">
+                                    <span class="beach">
+                                        Building
+                                    </span>
+                                </div>
+                                <img src="./asset/Ratings.svg" alt="">
+                            </div>
+                            <div class="img_title white bold">
+                                Bedugul
+                            </div>
+                            <div class="book_now_button">
+                                <div class="button_left">
+                                    <a href="trips_detail.html">
+                                        <button class="book_now green" onclick="showDetail()">
+                                            <span class="book">
+                                                Book Now
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="button_right">
+                                    <button class="view_detail green" onclick="showAbout()">
+                                        <span class="book">
+                                            View Detail
+                                        </span>
+                                       
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visited_split">
+                    <div class="container_spot">
+                        <div class="sentani"></div>
+                        <div class="spot_img_info">
+                            <div class="rating">
+                                <div class="beach_tag green">
+                                    <span class="beach">
+                                        Lake
+                                    </span>
+                                </div>
+                                <img src="./asset/Ratings.svg" alt="">
+                            </div>
+                            <div class="img_title white bold">
+                                Danau Sentani
+                            </div>
+                            <div class="book_now_button">
+                                <div class="button_left">
+                                    <a href="trips_detail.html">
+                                        <button class="book_now green" onclick="showDetail()">
+                                            <span class="book">
+                                                Book Now
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="button_right">
+                                    <button class="view_detail green" onclick="showAbout()">
+                                        <span class="book">
+                                            View Detail
+                                        </span>
+                                       
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_spot">
+                        <div class="nusa-penida"></div>
+                        <div class="spot_img_info">
+                            <div class="rating">
+                                <div class="beach_tag green">
+                                    <span class="beach">
+                                        island
+                                    </span>
+                                </div>
+                                <img src="./asset/Ratings.svg" alt="">
+                            </div>
+                            <div class="img_title white bold">
+                                Nusa Penida
+                            </div>
+                            <div class="book_now_button">
+                                <div class="button_left">
+                                    <a href="trips_detail.html">
+                                        <button class="book_now green" onclick="showDetail()">
+                                            <span class="book">
+                                                Book Now
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="button_right">
+                                    <button class="view_detail green" id="myButton" onclick="showAbout()">
+                                        <span class="book">
+                                            View Detail
+                                        </span>
+                                       
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_spot">
+                        <div class="bromo"></div>
+                        <div class="spot_img_info">
+                            <div class="rating">
+                                <div class="beach_tag green">
+                                    <span class="beach">
+                                        Mount
+                                    </span>
+                                </div>
+                                <img src="./asset/Ratings.svg" alt="">
+                            </div>
+                            <div class="img_title white bold">
+                                Mount Bromo
+                            </div>
+                            <div class="book_now_button">
+                                <div class="button_left">
+                                    <a href="trips_detail.html">
+                                        <button class="book_now green" onclick="showDetail()">
+                                            <span class="book">
+                                                Book Now
+                                            </span>
+                                        </button>
+                                    </a>
+                                    
+                                </div>
+                                <div class="button_right">
+                                    <button class="view_detail green" onclick="showAbout()">
+                                        <span class="book">
+                                            View Detail
+                                        </span>
+                                       
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_container">
+            <div class="footer_subcontainer1">
+                <div class="footer_roamer bold green poppins">
+                    roamer
+                </div>
+                <div class="footer_content white inter">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing 
+                    elit, sed do eiusmod tempor incididunt ut labore et 
+                    dolore magna aliqua. Ut enim ad minim veniam, 
+                </div>
+            </div>
+            <div class="footer_subcontainer2 inter">
+                <div class="footer_subcontainer2_up">
+                    <div class="footer_info">
+                        <span class="info white bold">INFO</span><br>
+                        <span class="info_down white">
+                            PRODUCT <br>
+                            PRICING <br>
+                            BLOG
+                        </span>
+                    </div>
+                    <div class="footer_info">
+                        <span class="info white bold">CONTACT</span><br>
+                        <span class="info_down white">
+                            VISIT <br>
+                            CALL <br>
+                            EMAIL
+                        </span>
+                    </div>
+                    <div class="footer_info">
+                        <span class="info white bold">SUPPORT</span><br>
+                        <span class="info_down white">
+                            HELP <br>
+                            STATUS <br>
+                            FAQ
+                        </span>
+                    </div>
+                    <div class="footer_info">
+                        <span class="info white bold">NEWS</span><br>
+                        <span class="info_down white">
+                            EMAIL <br>
+                            LINKEDIN <br>
+                            TWITTER
+                        </span>
+                    </div>
+                </div>
+                <div class="footer_subcontainer2_down">
+                    <img src="./asset/copyright roamer.svg" alt="copyright">
+                </div>
+            </div>
+         </div>
+
+        <!--  book now detail  -->
+
+        <div class="book_detail_container hidden1" id="popOut1">
+            <div class="detail_center inter hidden1">
+                <div class="center_up hidden1">
+                    <div class="up_left hidden1">
+                        <div class="input_center hidden1">
+                            <img src="./asset/date green.svg" alt="">
+                        <span class="nusa_tenggara bold green">
+                            6 Febuari 2022
+                        </span>
+                        <img src="./asset/arrow green.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="up_right hidden1">
+                        <div class="input_center">
+                            <img src="./asset/people grup.svg" alt="">
+                            <span class="nusa_tenggara bold green">
+                                5 person
+                            </span>
+                            <img src="./asset/arrow green.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="center_down">
+                    <a href="trips_detail.html">
+                        <button class="search_detail bold" onclick="hideDetail()">
+                            <span>
+                                Search
+                            </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--  about this area  -->
+
+        <div class="about_area_container" id="popOut2" onclick="hiddenAbout()">
+            <div class="about_left">
+
+            </div>
+            <div class="about_right inter white">
+                <div class="about_title">
+                    <span class="title_up">
+                        About This Area
+                    </span><br>
+                    <span class="title_down bold">
+                        Labuan Bajo
+                    </span>
+                </div>
+                <div class="about_content">
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod tempor incididunt 
+                        ut labore et dolore magna aliqua. Ut enim ad minim 
+                        veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo consequat. Duis aute 
+                        irure dolor in reprehenderit in voluptate velit esse 
+                        cillum dolore eu fugiat nulla pariatur. Excepteur 
+                        sint occaecat cupidatat non proident, sunt in culpa 
+                        qui officia deserunt mollit anim id est laborum.
+                    </span>
+                </div>
+                <div class="about_detail">
+                    <div class="about_split">
+                        <div class="what_nearby">
+                            <span class="nearby bold">
+                                What's Nearby
+                            </span><br>
+                            <span class="komodo_island">
+                                Komodo Island   - 13 min drive <br>
+                                Padar Island   - 20 min drive <br>
+                                Meruorah Resort   - 19 min drive <br>
+                                Komodo Island   - 23 min drive <br>
+                                AYANA Komodo resort   - 15 min drive <br>
+                                Taka Makassar Island   - 10 min drive 
+                            </span>
+                        </div>
+                    </div>
+                    <div class="about_split">
+                        <div class="what_nearby">
+                            <span class="nearby bold">
+                                Restaurant
+                            </span><br>
+                            <span class="komodo_island">
+                                The Lounge at Plataran <br>
+                                Waecicu Beach Inn Restaurant <br>
+                                Atlantis on the Rock <br>
+                                <span class="nearby bold">
+                                    Getting Around
+                                </span><br>
+                                Komodo International Airport <br>
+                                (IATA)  -  20 min drive                                
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="traffict.js"></script>
+        <script src="trips_layout.js"></script>
+    </body>
+</html>

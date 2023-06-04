@@ -1,0 +1,561 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet">
+        
+    <link rel="stylesheet" href="style_flight.css" type="text/css">
+    <title>Roamer</title>
+    <link rel="icon" href="./asset/logo roamer.svg" type="svg">
+</head>
+<body>
+<!--  Header  -->
+
+<div class="header_container poppins bold">
+            
+    <div class="header_roamer green bold">
+        roamer
+    </div>
+
+    <div class="header_navbar gray">
+        <ul class="navbar_list">
+            <a href="index.html">
+                <lo class="home">Home</lo>
+            </a>
+            <a href="trips.html">
+                <lo class="trips white">Trips</lo>
+            </a>
+            <a href="hotel_search.html">
+                <lo class="hotels gray">Hotels</lo>
+            </a>
+            <a href="shareXperience.html">
+                <lo class="shareX gray">ShareXperience</lo>
+            </a>
+        </ul>
+    </div>
+
+    <div class="header_signin bold">
+        <div class="center_customer">
+            <a href="customer_service.html">
+                <img src="./asset/headphone.svg" alt="customer service">
+            </a>
+        </div>
+        <div class="sign_in_container" onclick="toLogin()">
+            <div class="sign_in">
+                <a href="sign_in.html">
+                    Sign In
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+    <!--  search title  -->
+    <div class="search_title_container bold white inter">
+        <h1>Where Are You Leaving From</h1>
+    </div>
+
+    <!--    search bar  -->
+    <div class="search_bar_container inter bold">
+        <div class="search_bar">
+            <div class="search_location">
+                <img src="./asset/lcoation black.svg" alt="">
+            </div>
+            <div class="search_text">
+                Jakarta, Indonesia
+            </div>
+            <div class="search_cross">
+                <img src="./asset/cross gray.svg" alt="">
+            </div>
+        </div>
+        <button class="search_button green">
+            <p>Search</p>
+        </button>
+    </div>
+
+    <!--   tag  -->
+    <div class="tag_container inter white">
+        <div class="tag_cover">
+            <p>
+                Semarang
+            </p>
+        </div>
+        <div class="tag_cover">
+            <p>
+                Bali
+            </p>
+        </div>
+        <div class="tag_cover">
+            <p>
+                Makassar
+            </p>
+        </div>
+        <div class="tag_cover">
+            <p>
+                Surabaya
+            </p>
+        </div>
+        <div class="tag_cover">
+            <p>
+                Jayapura
+            </p>
+        </div>
+        <div class="tag_cover">
+            <p>
+                Yogyakarta
+            </p>
+        </div>
+        <div class="tag_cover">
+            <p>
+                PekanBaru
+            </p>
+        </div>
+    </div>
+
+    <!--    flight container    -->
+    <div class="flight_container inter white">
+        <div class="flight_cover">
+            <div class="flight_left">
+                <div class="left_up bold">
+                    <p>Citilink</p>
+                </div>
+                <div class="left_down">
+                    <img src="./asset/citilink.svg" alt="">
+                </div>
+            </div>
+            <div class="flight_mid">
+                <div class="mid_center">
+                    <div class="mid_left">
+                        <span class="mid_bold bold">
+                            07:00
+                        </span>
+                        <span class="mid_light">
+                            CGK
+                        </span>
+                    </div>
+                    <div class="mid_mid">
+                        <div class="mid1">
+                            <div class="span_up">
+                                3H 45M
+                            </div>
+                            <img src="./asset/Vector 18.svg" alt="">
+                            <div class="span_down">
+                                Direct
+                            </div>
+                        </div> 
+                        <div class="mid2">
+                            <img src="./asset/airplane_svgrepo.com.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="mid_right">
+                        <span class="mid_bold bold">
+                            10:45
+                        </span>
+                        <span class="mid_light">
+                            LBJ
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="flight_right">
+                <div class="right_up">
+                    <span class="idr bold">
+                        IDR 657,923
+                    </span>
+                    <span class="average">
+                        Average price per passenger
+                    </span>
+                </div>
+                <div class="right_down">
+                    <a href="review_trips.html">
+                        <button class="select green">
+                            <span>
+                                Select
+                            </span>
+                        </button>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="flight_cover">
+            <div class="flight_left">
+                <div class="left_up bold">
+                    <p>Batik Air</p>
+                </div>
+                <div class="left_down">
+                    <img src="./asset/batik air.svg" alt="">
+                </div>
+            </div>
+            <div class="flight_mid">
+                <div class="mid_center">
+                    <div class="mid_left">
+                        <span class="mid_bold bold">
+                            09:00
+                        </span>
+                        <span class="mid_light">
+                            CGK
+                        </span>
+                    </div>
+                    <div class="mid_mid">
+                        <div class="mid1">
+                            <div class="span_up">
+                                3H 45M
+                            </div>
+                            <img src="./asset/Vector 18.svg" alt="">
+                            <div class="span_down">
+                                Direct
+                            </div>
+                        </div> 
+                        <div class="mid2">
+                            <img src="./asset/airplane_svgrepo.com.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="mid_right">
+                        <span class="mid_bold bold">
+                            12:45
+                        </span>
+                        <span class="mid_light">
+                            LBJ
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="flight_right">
+                <div class="right_up">
+                    <span class="idr bold">
+                        IDR 982,872
+                    </span>
+                    <span class="average">
+                        Average price per passenger
+                    </span>
+                </div>
+                <div class="right_down">
+                    <a href="review_trips.html">
+                        <button class="select green">
+                            <span>
+                                Select
+                            </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flight_cover">
+            <div class="flight_left">
+                <div class="left_up bold">
+                    <p>Emirates</p>
+                </div>
+                <div class="left_down">
+                    <img src="./asset/emirates.svg" alt="">
+                </div>
+            </div>
+            <div class="flight_mid">
+                <div class="mid_center">
+                    <div class="mid_left">
+                        <span class="mid_bold bold">
+                            11:30
+                        </span>
+                        <span class="mid_light">
+                            CGK
+                        </span>
+                    </div>
+                    <div class="mid_mid">
+                        <div class="mid1">
+                            <div class="span_up">
+                                3H 45M
+                            </div>
+                            <img src="./asset/Vector 18.svg" alt="">
+                            <div class="span_down">
+                                Direct
+                            </div>
+                        </div> 
+                        <div class="mid2">
+                            <img src="./asset/airplane_svgrepo.com.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="mid_right">
+                        <span class="mid_bold bold">
+                            15:15
+                        </span>
+                        <span class="mid_light">
+                            LBJ
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="flight_right">
+                <div class="right_up">
+                    <span class="idr bold">
+                        IDR 945,321
+                    </span>
+                    <span class="average">
+                        Average price per passenger
+                    </span>
+                </div>
+                <div class="right_down">
+                    <a href="review_trips.html">
+                        <button class="select green">
+                            <span>
+                                Select
+                            </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flight_cover">
+            <div class="flight_left">
+                <div class="left_up bold">
+                    <p>Garuda Indonesia</p>
+                </div>
+                <div class="left_down">
+                    <img src="./asset/garuda indonesia.svg" alt="">
+                </div>
+            </div>
+            <div class="flight_mid">
+                <div class="mid_center">
+                    <div class="mid_left">
+                        <span class="mid_bold bold">
+                            12:00
+                        </span>
+                        <span class="mid_light">
+                            CGK
+                        </span>
+                    </div>
+                    <div class="mid_mid">
+                        <div class="mid1">
+                            <div class="span_up">
+                                3H 45M
+                            </div>
+                            <img src="./asset/Vector 18.svg" alt="">
+                            <div class="span_down">
+                                Direct
+                            </div>
+                        </div> 
+                        <div class="mid2">
+                            <img src="./asset/airplane_svgrepo.com.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="mid_right">
+                        <span class="mid_bold bold">
+                            15:45
+                        </span>
+                        <span class="mid_light">
+                            LBJ
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="flight_right">
+                <div class="right_up">
+                    <span class="idr bold">
+                        IDR 1,132,629
+                    </span>
+                    <span class="average">
+                        Average price per passenger
+                    </span>
+                </div>
+                <div class="right_down">
+                    <a href="review_trips.html">
+                        <button class="select green">
+                            <span>
+                                Select
+                            </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flight_cover">
+            <div class="flight_left">
+                <div class="left_up bold">
+                    <p>AirAsia</p>
+                </div>
+                <div class="left_down">
+                    <img src="./asset/AirAsia_Logo 1.svg" alt="">
+                </div>
+            </div>
+            <div class="flight_mid">
+                <div class="mid_center">
+                    <div class="mid_left">
+                        <span class="mid_bold bold">
+                            15:00
+                        </span>
+                        <span class="mid_light">
+                            CGK
+                        </span>
+                    </div>
+                    <div class="mid_mid">
+                        <div class="mid1">
+                            <div class="span_up">
+                                3H 45M
+                            </div>
+                            <img src="./asset/Vector 18.svg" alt="">
+                            <div class="span_down">
+                                Direct
+                            </div>
+                        </div> 
+                        <div class="mid2">
+                            <img src="./asset/airplane_svgrepo.com.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="mid_right">
+                        <span class="mid_bold bold">
+                            18:45
+                        </span>
+                        <span class="mid_light">
+                            LBJ
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="flight_right">
+                <div class="right_up">
+                    <span class="idr bold">
+                        IDR 1,386,274
+                    </span>
+                    <span class="average">
+                        Average price per passenger
+                    </span>
+                </div>
+                <div class="right_down">
+                    <a href="review_trips.html">
+                        <button class="select green">
+                            <span>
+                                Select
+                            </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flight_cover">
+            <div class="flight_left">
+                <div class="left_up bold">
+                    <p>Super Air jet</p>
+                </div>
+                <div class="left_down">
+                    <img src="./asset/Logo_Super_Air_Jet 1.svg" alt="">
+                </div>
+            </div>
+            <div class="flight_mid">
+                <div class="mid_center">
+                    <div class="mid_left">
+                        <span class="mid_bold bold">
+                            19:00
+                        </span>
+                        <span class="mid_light">
+                            CGK
+                        </span>
+                    </div>
+                    <div class="mid_mid">
+                        <div class="mid1">
+                            <div class="span_up">
+                                3H 45M
+                            </div>
+                            <img src="./asset/Vector 18.svg" alt="">
+                            <div class="span_down">
+                                Direct
+                            </div>
+                        </div> 
+                        <div class="mid2">
+                            <img src="./asset/airplane_svgrepo.com.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="mid_right">
+                        <span class="mid_bold bold">
+                            22:45
+                        </span>
+                        <span class="mid_light">
+                            LBJ
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="flight_right">
+                <div class="right_up">
+                    <span class="idr bold">
+                        IDR 1,529,216
+                    </span>
+                    <span class="average">
+                        Average price per passenger
+                    </span>
+                </div>
+                <div class="right_down">
+                    <a href="review_trips.html">
+                        <button class="select green">
+                            <span>
+                                Select
+                            </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!--  Footer  -->
+
+     <div class="footer_container">
+        <div class="footer_subcontainer1">
+            <div class="footer_roamer bold green poppins">
+                roamer
+            </div>
+            <div class="footer_content white inter">
+                Lorem ipsum dolor sit amet, consectetur adipiscing 
+                elit, sed do eiusmod tempor incididunt ut labore et 
+                dolore magna aliqua. Ut enim ad minim veniam, 
+            </div>
+        </div>
+        <div class="footer_subcontainer2 inter">
+            <div class="footer_subcontainer2_up">
+                <div class="footer_info">
+                    <span class="info white bold">INFO</span><br>
+                    <span class="info_down white">
+                        PRODUCT <br>
+                        PRICING <br>
+                        BLOG
+                    </span>
+                </div>
+                <div class="footer_info">
+                    <span class="info white bold">CONTACT</span><br>
+                    <span class="info_down white">
+                        VISIT <br>
+                        CALL <br>
+                        EMAIL
+                    </span>
+                </div>
+                <div class="footer_info">
+                    <span class="info white bold">SUPPORT</span><br>
+                    <span class="info_down white">
+                        HELP <br>
+                        STATUS <br>
+                        FAQ
+                    </span>
+                </div>
+                <div class="footer_info">
+                    <span class="info white bold">NEWS</span><br>
+                    <span class="info_down white">
+                        EMAIL <br>
+                        LINKEDIN <br>
+                        TWITTER
+                    </span>
+                </div>
+            </div>
+            <div class="footer_subcontainer2_down">
+                <img src="./asset/copyright roamer.svg" alt="copyright">
+            </div>
+        </div>
+     </div>
+     
+</body>
+</html>
